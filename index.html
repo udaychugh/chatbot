@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot by Uday Chugh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="https://img.icons8.com/office/452/chatbot.png">
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <h1><i class="fas fa-robot"></i> ChatBot</h1>
+        </div>
+        <div class="mid">
+            <div class="chat">
+                <h2>Messages</h2>
+                <div class="mainChat">
+                    <div class="userSide hidden" id="userSide">
+                        <div class="bubble2">
+                            <p id="userLog"></p>
+                        </div>
+                        <div class="det">
+                            <i class="far fa-user"></i>
+                            <p id="time1"></p>
+                        </div>
+                    </div>
+                    <div class="botSide">
+                        <div class="det">
+                            <i class="fas fa-robot"></i>
+                            <p id="time2"></p>
+                        </div>
+                        <div class="bubble">
+                            <p id="chatLog">let's chat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" id="userBox" onkeypress="talk()" placeholder="Enter Your Message" autofocus>
+            <button onclick="talkwithbutton()"><i class="fas fa-paper-plane" title="Send Message"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body></html>
